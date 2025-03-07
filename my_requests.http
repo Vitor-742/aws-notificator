@@ -1,0 +1,38 @@
+GET http://localhost:3000/products
+
+
+###
+
+PUT http://localhost:3000/products/start-services
+
+
+###
+
+POST http://localhost:3000/products/
+Content-Type: application/json
+
+{
+    "product_name": "iphone 15",
+    "desired_price": 10000
+}
+
+###
+
+DELETE http://localhost:3000/products/samsung s24/
+
+###
+
+POST http://localhost:3000/products/email/
+Content-Type: application/json
+
+{
+    "email_address": "vitorcampos7422@gmail.com"
+}
+
+###
+
+GET http://localhost:3000/products/deploy/
+
+###
+
+DELETE http://localhost:3000/products/delete-services

@@ -1,10 +1,23 @@
-GET http://localhost:3000/products
-
-
-###
+### 
+# Crie os serviços
 
 PUT http://localhost:3000/products/start-services
 
+
+###
+# Insira seu email
+
+POST http://localhost:3000/products/email/
+Content-Type: application/json
+
+{
+    "email_address": "vitor.email@gmail.com"
+}
+
+
+###
+# Manipule os produtos
+GET http://localhost:3000/products
 
 ###
 
@@ -21,18 +34,11 @@ Content-Type: application/json
 DELETE http://localhost:3000/products/samsung s24/
 
 ###
-
-POST http://localhost:3000/products/email/
-Content-Type: application/json
-
-{
-    "email_address": "vitorcampos7422@gmail.com"
-}
-
-###
+# Faça o deploy da função lambda para que busque os preços todos os dias
 
 GET http://localhost:3000/products/deploy/
 
 ###
+# Delete os serviços depois de utilizados ou em caso de erro
 
 DELETE http://localhost:3000/products/delete-services

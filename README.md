@@ -1,12 +1,12 @@
-📌 Monitoramento de Preços com AWS e Mercado Livre
+# 📌 Monitoramento de Preços com AWS e Mercado Livre
 
-📚 Visão Geral
+## 📚 Visão Geral
 
 Este projeto permite que os usuários marquem produtos que desejam comprar e definam um preço ideal. A ferramenta monitora os preços na API do Mercado Livre e, quando um produto atinge o valor desejado, um e-mail é enviado para o usuário.
 
 A solução é construída utilizando AWS Lambda, SNS, DynamoDB, IAM e EventBridge, além do NestJS e da API do Mercado Livre.
 
-🏷️ Tecnologias Utilizadas
+## 🏷️ Tecnologias Utilizadas
 
 - **NestJS** → Estrutura modular para a API backend.
 - **AWS Lambda** → Funções serverless para execução assíncrona.
@@ -16,7 +16,7 @@ A solução é construída utilizando AWS Lambda, SNS, DynamoDB, IAM e EventBrid
 - **AWS IAM** → Controle de permissões para os serviços AWS.
 - **API Mercado Livre** → Busca de produtos e verificação de preços em tempo real.
 
-🚀 Como Funciona
+## 🚀 Como Funciona
 
 1. O usuário registra um produto e define um preço alvo.
 2. A função AWS Lambda é acionada regularmente via AWS EventBridge.
@@ -25,7 +25,7 @@ A solução é construída utilizando AWS Lambda, SNS, DynamoDB, IAM e EventBrid
    - O serviço AWS SNS envia um e-mail ao usuário notificando sobre a queda de preço.
 5. O processo se repete continuamente.
 
-🛠️ Como Configurar
+## 🛠️ Como Configurar
 
 **1️⃣ Configurar Credenciais**
 
@@ -56,10 +56,6 @@ npm run start:dev
 
 **4️⃣ Instale a extensão do VSCode REST Client**
 
-```
-npm run start:dev
-```
-
 **5️⃣ Sinta-se a vontade para seguir as requisições em my_requests.http**
 
-🚀 Agora é só rodar e monitorar os preços automaticamente!
+### 🚀 Agora é só rodar e monitorar os preços automaticamente!
